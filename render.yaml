@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Starting Ollama..."
+ollama serve &
+
+sleep 5
+
+echo "Pulling model..."
+ollama pull mistral
+
+echo "Running Ollama server..."
+wait
